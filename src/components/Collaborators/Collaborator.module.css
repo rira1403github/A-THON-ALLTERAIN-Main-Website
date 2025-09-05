@@ -1,0 +1,164 @@
+.collaborators-section {
+  position: relative;
+  padding: 2rem 2rem 4rem;
+  /* background-color: #121212; */
+  background-color: #ffffff;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  max-width: 1440px;
+  margin: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.collaborators-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+  right: 2rem;
+  height: 1px;
+  background-color: #6d6969;
+}
+
+.collab-heading {
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-family: "Poppins", Arial, sans-serif;
+  padding-top: 3rem;
+}
+
+.collab-sub-heading {
+  /* color: #ccc; */
+  color: #9C9C9C;
+  font-size: 18px;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.slider {
+  max-width: 1450px;
+  margin: auto;
+  background-color: #f9f8f5;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 20);
+  animation: scroll 25s linear infinite;
+  animation-play-state: running;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.slide a {
+  display: inline-block;
+}
+
+.slide:hover img {
+  transform: scale(0.9);
+}
+
+.logo-img {
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  transform: scale(0.7);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo-img {
+    transform: scale(0.9);
+  }
+
+  .slide:hover img {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    transform: scale(0.8);
+  }
+
+  .slide:hover img {
+    transform: scale(0.9);
+  }
+
+  .collab-heading {
+    font-size: 1.8rem;
+    padding-top: 1rem;
+  }
+  
+  .collab-sub-heading {
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .collaborators-section {
+    padding: 0rem 0.6rem 2rem;
+  }
+
+  .logo-img {
+    transform: scale(0.8);
+  }
+
+  .slide:hover img {
+    transform: scale(0.9);
+  }
+
+  .slide {
+    padding: 6px;
+  }
+
+  .slider {
+    padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-img {
+    transform: scale(0.78);
+  }
+
+  .slide:hover img {
+    transform: scale(0.88);
+  }
+}
+
+@media (max-width: 380px) {
+  .logo-img {
+    transform: scale(0.6);
+  }
+
+  .slide:hover img {
+    transform: scale(0.7);
+  }
+}

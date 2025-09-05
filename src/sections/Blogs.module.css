@@ -1,0 +1,139 @@
+.blogSection {
+  background-color: #121212;
+  padding: 80px 20px;
+  max-width: 1440px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.blogTitle {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.blogSubtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ccc;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #fff;
+  border: 2px solid #2563eb;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-weight: 500;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.blogCard {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blogCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(79, 70, 229, 0.4);
+}
+
+.blogImage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blogContent {
+  padding: 20px;
+}
+
+.blogMetaTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.icon {
+  color: #333;
+}
+
+.blogPostTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.blogDesc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.blogFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.readMore {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.readMore:hover {
+  color: #2563eb;
+}
+
+.centerBtn {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.viewAllBtn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.viewAllBtn:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+}
