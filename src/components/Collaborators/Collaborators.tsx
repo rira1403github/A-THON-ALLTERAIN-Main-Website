@@ -76,11 +76,10 @@
 
 
 
-
-
 "use client";
 
 import React from "react";
+import Image from "next/image"; // ✅ Use Next.js Image
 import styles from "./Collaborator.module.css";
 
 type Logo = {
@@ -102,39 +101,35 @@ const logos: Logo[] = [
 ];
 
 const Collaborators: React.FC = () => {
-  const doubledLogos = logos.concat(logos);
+  const doubledLogos: Logo[] = [...logos, ...logos]; // ✅ Typed array
 
   return (
     <div className={styles["collaborators-section"]}>
       <h2 className={styles["collab-heading"]}>TACTICAL COLLABORATIONS</h2>
       <p className={styles["collab-sub-heading"]}>
-        We partner with industry leaders in technology, adventure, and innovation to push the boundaries of what's possible.
+        We partner with industry leaders in technology, adventure, and innovation to push the boundaries of what&apos;s possible.
       </p>
       <div className={styles.slider}>
         <div className={styles["slide-track"]}>
-          {doubledLogos.map((logo, index) => (
+          {doubledLogos.map((logo: Logo, index: number) => (
             <div className={styles.slide} key={index}>
               {logo.link ? (
                 <a href={logo.link} target="_blank" rel="noopener noreferrer">
-                  <img
+                  <Image
                     src={logo.img}
                     alt={`collab-${index}`}
                     className={styles["logo-img"]}
-                    style={{
-                      height: `${logo.height}px`,
-                      width: `${logo.width}px`,
-                    }}
+                    height={logo.height}
+                    width={logo.width}
                   />
                 </a>
               ) : (
-                <img
+                <Image
                   src={logo.img}
                   alt={`collab-${index}`}
                   className={styles["logo-img"]}
-                  style={{
-                    height: `${logo.height}px`,
-                    width: `${logo.width}px`,
-                  }}
+                  height={logo.height}
+                  width={logo.width}
                 />
               )}
             </div>
