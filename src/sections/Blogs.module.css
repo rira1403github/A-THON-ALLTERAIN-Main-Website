@@ -26,14 +26,6 @@
   line-height: 1.6;
 }
 
-.highlight {
-  color: #fff;
-  border: 2px solid #2563eb;
-  border-radius: 4px;
-  padding: 2px 6px;
-  font-weight: 500;
-}
-
 .loading {
   text-align: center;
   font-size: 1.1rem;
@@ -59,9 +51,15 @@
   box-shadow: 0 12px 30px rgba(79, 70, 229, 0.4);
 }
 
-.blogImage {
+/* wrapper for next/image */
+.blogImageWrapper {
+  position: relative;
   width: 100%;
   height: 220px;
+  overflow: hidden;
+}
+
+.blogImage {
   object-fit: cover;
 }
 
