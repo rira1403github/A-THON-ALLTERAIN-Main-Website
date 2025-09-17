@@ -160,11 +160,12 @@ const Footer = () => {
           />
         </Link>
   <div className={styles.footerLinks}>
-    <h3>REACH US ON</h3>
-    <Link href="mailto:mail@a-thonallterrain.com" legacyBehavior>
-      <a>mail@a-thonallterrain.com</a>
-    </Link>
-  </div>
+  <h3>REACH US ON</h3>
+  <Link href="mailto:mail@a-thonallterrain.com">
+    mail@a-thonallterrain.com
+  </Link>
+</div>
+
         <p className={styles.footerCopy}>
     © 2023. A-THON ALLTERRAIN PVT. LTD. All Rights Reserved.
     <br />
