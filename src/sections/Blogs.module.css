@@ -51,7 +51,6 @@
   box-shadow: 0 12px 30px rgba(79, 70, 229, 0.4);
 }
 
-/* wrapper for next/image */
 .blogImageWrapper {
   position: relative;
   width: 100%;
@@ -134,4 +133,12 @@
 .viewAllBtn:hover {
   background: #2563eb;
   border-color: #2563eb;
+}
+
+
+@media (max-width: 1024px) {
+  .blogSection {
+    background-color: #121212;
+    padding: 5px 20px 20px;
+  }
 }

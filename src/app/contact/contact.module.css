@@ -1,0 +1,225 @@
+.contactPage {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  max-width: 1440px;
+  margin: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.headerSection {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+}
+
+.headerSection h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.headerSection p {
+  font-size: 17px;
+  color: #777;
+}
+
+.cardsSection {
+  background: #f8f8f8;
+  color: #000;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cardsSection h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: #111;
+  display: flex;                
+  flex-direction: column;    
+  justify-content: center;   
+  align-items: center;        
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  width: 300px;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footprintsSection {
+  width: 1200px;
+  margin: auto;
+  background: #fff;
+  color: #000;
+  padding: 4rem;
+  text-align: justify;
+}
+
+.footprintsSection h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.footprintsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 5rem;
+}
+
+.footprint h4 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.formSection {
+  background: #111;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.formSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.formSection p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.contactForm {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.formSection p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputRow {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.inputRow input,
+.contactForm input,
+.contactForm textarea,
+.contactForm select {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputRow input:focus,
+.contactForm textarea:focus,
+.contactForm select:focus {
+  border-color: #0070f3;
+  box-shadow: 0 0 5px rgba(0, 112, 243, 0.3);
+}
+
+.phoneInput {
+  display: flex;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.phoneInput select {
+  max-width: 150px;
+}
+
+.contactForm textarea {
+  resize: vertical;
+}
+
+.contactForm button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background: #ff5722;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.contactForm button:hover {
+  background: #e64a19;
+}
+
+@media (max-width: 768px) {
+  .inputRow {
+    flex-direction: column;
+  }
+
+  .footprintsSection {
+    width: auto;
+    margin: auto;
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+    text-align: justify;
+  }
+
+  .phoneInput select {
+    max-width: 100%;
+  }
+
+  .footprintsContainer {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+}
+
+@media (max-width: 600px) {
+  .inputRow {
+    flex-direction: column;
+  }
+
+  .phoneInput select {
+    max-width: 100%;
+  }
+}

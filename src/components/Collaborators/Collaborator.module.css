@@ -52,7 +52,7 @@
 .slide-track {
   display: flex;
   width: calc(250px * 20);
-  animation: scroll 25s linear infinite;
+  animation: scroll 50s linear infinite;
   animation-play-state: running;
 }
 
