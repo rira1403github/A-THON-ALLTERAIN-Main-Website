@@ -388,8 +388,8 @@ export default function AboutUs() {
               technology platforms designed to perform in the toughest
               environments.
               <br />
-              We are more than just a company—we are engineers, creators, and
-              problem-solvers committed to pushing the boundaries of
+              We are more than just a company&mdash;we are engineers, creators,
+              and problem-solvers committed to pushing the boundaries of
               performance, safety, and adaptability. Every product we build
               reflects our core values: strength, reliability, and innovation.
               From off-road mobility solutions like the ASHVA series to
@@ -398,14 +398,14 @@ export default function AboutUs() {
               seamlessly meets real-world challenges.
               <br />
               Our approach is collaborative, modular, and forward-looking,
-              ensuring that our solutions not only solve today's problems but
-              are also prepared for tomorrow’s needs. With a focus on Made in
-              India excellence, we blend engineering precision with rugged
-              practicality, enabling industries, defense forces, and individuals
-              to achieve the extraordinary.
+              ensuring that our solutions not only solve today&apos;s problems
+              but are also prepared for tomorrow&apos;s needs. With a focus on
+              Made in India excellence, we blend engineering precision with
+              rugged practicality, enabling industries, defense forces, and
+              individuals to achieve the extraordinary.
               <br />
-              At A-THON, we don&apos;t just build machines—we build platforms of
-              possibility.
+              At A-THON, we don&apos;t just build machines&mdash;we build
+              platforms of possibility.
             </p>
           </motion.div>
 
