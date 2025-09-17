@@ -119,7 +119,7 @@
 
 @media (max-width: 480px) {
   .events {
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
   .heading {
     font-size: 1.6rem;
@@ -148,6 +148,10 @@
   .slider :global(.swiper-pagination-bullet-active) {
     background: #000;
     transform: scale(1.1);
+  }
+  .image {
+    height: 400px;
+    object-fit: cover;
   }
 }
 

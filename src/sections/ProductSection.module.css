@@ -104,14 +104,13 @@
 }
 
 .tabBar {
-  max-width: 500px;
+  max-width: max-content;
   margin: auto;
   margin-top: 2rem;
   background: #6b6b6b;
   border-radius: 8px;
-  padding: 12px 0;
+  padding: 12px 5px;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -136,14 +135,16 @@
   position: absolute;
   left: 0;
   bottom: -4px;
-  width: 0%;
-  height: 2px;
+  width: 100%;
+  height: 1px;
   background: #ffffff;
   transition: width 0.3s ease;
 }
 
 .active::after {
   width: 100%;
+  background-color: #ffffff;
+  height: 2.5px;
 }
 
 @media (max-width: 768px) {

@@ -66,7 +66,7 @@ const Events: React.FC = () => {
       <Swiper
         modules={[Pagination, Navigation]}
         pagination={{ clickable: true }}
-        navigation
+        // navigation
         spaceBetween={40}
         className={styles.slider}
       >
