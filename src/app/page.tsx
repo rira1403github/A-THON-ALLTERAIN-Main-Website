@@ -7,6 +7,8 @@ import Events from "@/sections/Events";
 import Highlights from "@/sections/Highlights";
 import Collaborator from "@/components/Collaborators/Collaborators";
 import Products from "@/sections/ProductSection";
+import Awards from "@/sections/Award";
+import CTA from "@/sections/ActionsSection";
 
 export default function Home() {
     return (
@@ -18,7 +20,9 @@ export default function Home() {
             <Testimonial />
             <Events />
             <Blogs />
+            <Awards />
             <Collaborator />
+            <CTA />
             <Footer /> 
         </>
     );

@@ -1,6 +1,6 @@
 .blogSection {
   background-color: #121212;
-  padding: 80px 20px;
+  padding: 40px 20px;
   max-width: 1440px;
   margin: auto;
   box-sizing: border-box;
@@ -144,6 +144,9 @@
 }
 
 @media (max-width: 480px) {
+  .blogSection {
+    padding: 5px 10px 20px;
+  }
   .viewAllBtn {
     padding: 8px 18px;
     font-size: 0.8rem;
