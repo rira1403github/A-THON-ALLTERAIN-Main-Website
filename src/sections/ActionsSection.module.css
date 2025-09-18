@@ -74,9 +74,19 @@
   }
   .link {
     flex-direction: column;
-    font-size: 22px;
+    font-size: 20px;
   }
   .card {
     padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    gap: 0.6rem;
+    padding: 10px 0;
+  }
+  .link {
+    font-size: 18px;
   }
 }

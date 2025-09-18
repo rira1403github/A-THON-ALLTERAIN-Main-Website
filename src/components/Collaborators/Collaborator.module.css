@@ -11,16 +11,6 @@
   box-sizing: border-box;
 }
 
-.collaborators-section::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 2rem;
-  right: 2rem;
-  height: 1px;
-  background-color: #6d6969;
-}
-
 .collab-heading {
   color: #000;
   font-size: 2rem;
@@ -31,7 +21,6 @@
 }
 
 .collab-sub-heading {
-  /* color: #ccc; */
   color: #9C9C9C;
   font-size: 18px;
   margin-bottom: 2rem;
@@ -125,12 +114,13 @@
     padding: 0rem 0.6rem 2rem;
   }
 
-   .collab-heading {
-    font-size: 1.4rem;
+  .collab-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
     padding-top: 0.6rem;
   }
 
-   .collab-sub-heading {
+  .collab-sub-heading {
     font-size: 13px;
     margin-bottom: 2rem;
   }
@@ -139,16 +129,12 @@
     transform: scale(0.7);
   }
 
+  .slide {
+    height: 80px;
+  }
+
   .slide:hover img {
     transform: scale(0.8);
-  }
-
-  .slide {
-    padding: 0;
-  }
-
-  .slider {
-    padding: 0;
   }
 }
 
