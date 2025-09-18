@@ -1,7 +1,6 @@
 .collaborators-section {
   position: relative;
   padding: 2rem 2rem 4rem;
-  /* background-color: #121212; */
   background-color: #ffffff;
   overflow: hidden;
   align-items: center;
@@ -124,6 +123,16 @@
 @media (max-width: 480px) {
   .collaborators-section {
     padding: 0rem 0.6rem 2rem;
+  }
+
+   .collab-heading {
+    font-size: 1.4rem;
+    padding-top: 0.6rem;
+  }
+
+   .collab-sub-heading {
+    font-size: 13px;
+    margin-bottom: 2rem;
   }
 
   .logo-img {
