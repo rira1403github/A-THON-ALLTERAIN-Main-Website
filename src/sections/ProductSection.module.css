@@ -191,7 +191,24 @@
     font-weight: 600;
     font-size: 12px;
     padding: 8px 12px;
+  }
 }
+
+@media (max-width: 480px) {
+  .tabBar {
+    margin-top: 2rem;
+    padding: 8px 5px;
+  }
+
+  .tab {
+    font-size: 14px;
+    margin: auto;
+    padding: 8px 8px;
+  }
+  
+  .book {
+    padding: 0.3rem 0.7rem;
+  }
 }
 
 @media (max-width: 380px) {
@@ -215,15 +232,17 @@
     font-size: 0.9rem;
   }
 
-  .buttons {
-    flex-direction: column;
+  .book {
+    padding: 0.3rem 0.5rem;
   }
 
   .tabBar {
-    flex-direction: column;
+    margin-top: 2rem;
+    padding: 8px 3px;
   }
 
   .tab {
-    width: 100%;
+    font-size: 11px;
+    padding: 2px 6px;
   }
 }
