@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 .events {
   padding: 4rem 2rem;
   text-align: center;
   background: #fff;
   max-width: 1440px;
-  margin: auto;
-  overflow-x: hidden;
+  font-family: 'poppins',sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
+  margin: auto;
 }
 
 .heading {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 .testimonials {
   background: #121212;
   padding: 60px 20px;
@@ -7,6 +9,7 @@
   margin: auto;
   overflow-x: hidden;
   box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
 }
 
 .title {

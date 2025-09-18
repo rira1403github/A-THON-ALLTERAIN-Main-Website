@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 .footerSection {
   background-color: black;
   color: white;
   padding: 40px 30px 15px;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Poppins';
   width: 100%;
   overflow-x: hidden;
-  text-align: justify;
   margin: auto;
   box-sizing: border-box;
   max-width: 1440px;
@@ -111,30 +112,22 @@
 
 .footerBottom {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
   border-top: 1px solid #333;
-  padding-top: 20px;
-  text-align: center;
+  padding: 1rem;
   animation: fadeIn 1.2s ease-in;
 }
 
 .footerLinks {
   display: flex;
   justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   font-weight: bold;
   font-size: 14px;
-}
-
-.footerBottom {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  border-top: 1px solid #333;
-  padding: 1rem;
-  animation: fadeIn 1.2s ease-in;
 }
 
 .footerLinks a {
@@ -153,8 +146,7 @@
   font-size: 13px;
   color: #aaa;
   margin-top: 10px;
-  justify-content: left;
-  text-align: left;
+  text-align: right;
 }
 
 .logo {
@@ -176,10 +168,13 @@
 @media (max-width: 768px) {
   .footerColumns {
     flex-direction: column;
+    gap: 0px; 
   }
 
   .footerCol {
     margin: 0px;
+    border-bottom: 1px solid #222;
+    padding: 0px;
   }
 
   .toggleIcon {
@@ -189,14 +184,23 @@
   .footerColLinks {
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.4s ease;
   }
 
-  .open {
-    max-height: 1000px;
+  .footerColLinks.open {
+    max-height: 500px;
   }
 }
 
 @media (max-width: 480px) {
+  .footerSection {
+    padding: 10px 10px 0px;
+  }
+
+  .footerCol h4 {
+    font-size: 15px;
+  }
+
   .socialItem {
     font-weight: 600;
     font-size: 12.5px;
@@ -212,38 +216,16 @@
 
   .footerCopy {
     font-size: 10px;
+    text-align: center;
   }
 
-  .footerColLinks {
-    max-height: 0;
-    overflow: hidden;
+  .footerBottom {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
   }
 
-
-.footerBottom {
-  flex-direction: row-reverse;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.footerLinks {
-  flex-direction: column;
-  gap: 0px;
-  font-size: 14px;
-}
-
-.footerBottom {
-  flex-direction: column;
-  align-items: center;
-  padding: 0rem;
-}
-
-.footerCopy {
-  font-size: 9px;
-  text-align: center;
-}
-
-.logo {
-  display: none;
-}
+  .logo {
+    display: none;
+  }
 }

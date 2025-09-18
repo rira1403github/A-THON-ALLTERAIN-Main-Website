@@ -66,7 +66,7 @@ export default function Award() {
       img: "/assets/Award/A7.webp",
       title: "Urban Launch",
       description:
-        "A-THON introduced the ASHVA 4X4 in Mumbai & Pune, sparking attention among auto enthusiasts and industry insiders.",
+        "A-THON introduced the ASHVA 4X4 in Mumbai & Pune, sparking attention among auto enthusiasts and insiders.",
     },
     {
       id: 8,
