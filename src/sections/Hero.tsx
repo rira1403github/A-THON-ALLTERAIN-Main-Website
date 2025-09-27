@@ -3,19 +3,28 @@
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import type { Swiper as SwiperClass } from "swiper"; 
 import "swiper/css";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Hero.module.css";
 
-const slides = [
-  { id: 0, label: "ASHVA 6X6", link:  "/products/Ashva6x6", img: "/assets/landingPage/hp.webp", alt: "ASHVA6X6" },
-  { id: 1, label: "ASHVA 4X4", link:  "/products/Ashva4x4", img: "/assets/landingPage/hp5.webp", alt: "ASHVA4X4" },
-  { id: 2, label: "ASHVA 4S", link:  "/products/Ashva4S", img: "/assets/landingPage/hp3.webp", alt: "ASHVA4S" },
+type Slide = {
+  id: number;
+  label: string;
+  link: string;
+  img: string;
+  alt: string;
+};
+
+const slides: Slide[] = [
+  { id: 0, label: "ASHVA 6X6", link: "/products/Ashva6x6", img: "/assets/landingPage/hp.webp", alt: "ASHVA6X6" },
+  { id: 1, label: "ASHVA 4X4", link: "/products/Ashva4x4", img: "/assets/landingPage/hp6.webp", alt: "ASHVA4X4" },
+  { id: 2, label: "ASHVA 4S", link: "/products/Ashva4S", img: "/assets/landingPage/hp3.webp", alt: "ASHVA4S" },
 ];
 
 export default function Hero() {
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperClass | null>(null); 
   const [activeIndex, setActiveIndex] = useState(0);
   const [progress, setProgress] = useState(0);
 
@@ -24,12 +33,14 @@ export default function Hero() {
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
         onSlideChange={(swiper) => {
           setActiveIndex(swiper.realIndex);
           setProgress(0);
         }}
-        onAutoplayTimeLeft={(_, time, progressFraction) => {
+        onAutoplayTimeLeft={(_, __, progressFraction) => {
           setProgress((1 - progressFraction) * 100);
         }}
         loop
