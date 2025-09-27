@@ -2,7 +2,7 @@
 
 .collaborators-section {
   position: relative;
-  padding: 2rem 2rem 4rem;
+  padding: 2rem 0.5rem 4rem;
   background-color: #ffffff;
   overflow: hidden;
   align-items: center;
@@ -120,7 +120,7 @@
   .collab-heading {
     font-size: 1.5rem;
     font-weight: 700;
-    padding-top: 0.6rem;
+    margin-bottom: 0.5rem;
   }
 
   .collab-sub-heading {
@@ -142,6 +142,7 @@
 }
 
 @media (max-width: 400px) {
+
   .logo-img {
     transform: scale(0.68);
   }

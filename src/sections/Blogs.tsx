@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import styles from "./Blogs.module.css";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -28,30 +29,30 @@ const BlogSection = () => {
   const blogs: Blog[] = [
     {
       id: 1,
-      title: "Revolutionizing Off-Road Adventures",
+      title: "ASHVA 4X4 – Redefining Off-Road Adventures",
       description:
-        "Discover how cutting-edge technology and rugged design combine to create the ultimate off-road experience. From durability to unmatched power...",
-      cover: "/assets/blogs/offRoad.png",
+        "The ASHVA 4X4 is a powerful ATV built for tough terrains, offering strong performance, reliable safety, and a rugged design that combines comfort, style, and durability...",
+      cover: "/assets/blogs/blogs4x44.webp",
       author: "John Doe",
       publishedAt: "2024-08-12",
       slug: "off-road-adventures",
     },
     {
       id: 2,
-      title: "The Future of Electric ATVs",
+      title: "Experience Rugged Strength & Adventure with ASHVA 6X6",
       description:
-        "Electric vehicles are no longer limited to city roads. Learn how EV innovation is transforming ATVs into sustainable yet powerful machines...",
-      cover: "/assets/blogs/offRoad.png",
+        "The ASHVA 6X6 is a powerful all-terrain vehicle built for extreme conditions, offering superior traction, durability, and comfort for both adventure and heavy-duty tasks...",
+      cover: "/assets/blogs/blogs6x61.webp",
       author: "Sarah Lee",
       publishedAt: "2024-09-05",
       slug: "electric-atvs",
     },
     {
       id: 3,
-      title: "Designing Vehicles for Extreme Terrains",
+      title: "ASHVA 4S – Experience the Thrill of Off-Road Adventures",
       description:
-        "Our engineering team shares insights on designing vehicles that can withstand harsh terrains while providing comfort and safety...",
-      cover: "/assets/blogs/offRoad.png",
+        "The ASHVA 4S is a compact, powerful ATV offering superior traction, agility, and comfort—perfect for off-road adventures and light utility tasks...",
+      cover: "/assets/blogs/blogs4S1.webp",
       author: "Mike Ross",
       publishedAt: "2024-10-21",
       slug: "extreme-terrain-design",
@@ -60,9 +61,16 @@ const BlogSection = () => {
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
+
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     handleResize();
+
     window.addEventListener("resize", handleResize);
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -70,7 +78,6 @@ const BlogSection = () => {
     <div
       key={post.id}
       className={styles.blogCard}
-      data-aos="fade-up"
       data-aos-delay={String(i * 100)}
     >
       <div className={styles.blogImageWrapper}>
@@ -100,9 +107,9 @@ const BlogSection = () => {
         </p>
         <div className={styles.blogFooter}>
           <span>8 min read</span>
-          <a href={`/blog/${post.slug}`} className={styles.readMore}>
+          <Link href={`/blog/${post.slug}`} className={styles.readMore}>
             Read Article →
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -110,10 +117,10 @@ const BlogSection = () => {
 
   return (
     <div className={styles.blogSection}>
-      <h1 className={styles.blogTitle} data-aos="fade-down">
+      <h1 className={styles.blogTitle}>
         Blogs & Insights
       </h1>
-      <p className={styles.blogSubtitle} data-aos="fade-up">
+      <p className={styles.blogSubtitle}>
         Explore stories of innovation, adventure, and the technology that drives
         our vehicles forward.
       </p>
@@ -124,7 +131,7 @@ const BlogSection = () => {
           spaceBetween={20}
           slidesPerView={1}
           autoplay={{ delay: 3000 }}
-          // pagination={{ clickable: true }}
+          pagination={{ clickable: true }}
           loop
           className={styles.blogSwiper}
         >
@@ -139,7 +146,9 @@ const BlogSection = () => {
       )}
 
       <div className={styles.centerBtn}>
-        <button className={styles.viewAllBtn}>View All Articles</button>
+        <Link href="/Blogs">
+          <button className={styles.viewAllBtn}>View All Articles</button>
+        </Link>
       </div>
     </div>
   );

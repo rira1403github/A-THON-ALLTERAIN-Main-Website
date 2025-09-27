@@ -1,0 +1,154 @@
+.container {
+  /* background: linear-gradient(135deg, #1f1f1f, #0d0d0d); */
+  background-color: #fff;
+  color: #fff;
+  max-width: 1440px;
+  margin: auto;
+  border-radius: 12px;
+  animation: fadeIn 1s ease-in-out;
+} 
+ 
+.formsection {
+  background: #000;
+  color: #fff;
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: 5rem auto;
+  border-radius: 12px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field input,
+.field select {
+  padding: 0.8rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(247, 234, 43, 0.5);
+}
+
+.phoneInput {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.phoneInput select {
+  width: 45%;
+}
+
+.phoneInput input {
+  flex: 1;
+}
+
+.infoBox {
+  background: #fff;
+  color: #000;
+  padding: 1.5rem;
+  border-radius: 8px;
+  line-height: 1.6;
+  animation: slideUp 1s ease-in-out;
+}
+
+.infoBox h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.infoBox ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.submitBtn {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: #ffffff;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .heading {
+    font-size: 1.6rem;
+  }
+  .formsection {
+    padding: 1rem 0.5rem;
+    margin: 0;
+    border-radius: 0px;
+  }
+  .submitBtn {
+    padding: 0.5rem;
+    width: 80%;
+    margin: auto;
+    font-size: 1rem;  
+  } 
+}

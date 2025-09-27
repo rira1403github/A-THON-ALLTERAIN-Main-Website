@@ -7,7 +7,6 @@ import Image from "next/image";
 
 import "swiper/css";
 import "swiper/css/pagination";
-
 import styles from "./Award.module.css";
 
 interface AwardItem {
@@ -117,8 +116,7 @@ export default function Award() {
               className={styles.card}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.1 }}
             >
               <div className={styles.imageWrapper}>
                 <Image

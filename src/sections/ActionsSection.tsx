@@ -18,13 +18,13 @@ const ActionsSection: React.FC = () => {
       id: 2,
       label: "Book a Test drive",
       img: "/assets/landingPage/CTA3.png",
-      link: "/test-drive",
+      link: "/book",
     },
     {
       id: 3,
       label: "Book Experience",
       img: "/assets/landingPage/CTA1.png",
-      link: "/experience",
+      link: "https://asxmotodrome.com/",
     },
   ];
 
@@ -34,7 +34,7 @@ const ActionsSection: React.FC = () => {
         <motion.div
           key={item.id}
           className={styles.card}
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

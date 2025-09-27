@@ -11,19 +11,19 @@ import Awards from "@/sections/Award";
 import CTA from "@/sections/ActionsSection";
 
 export default function Home() {
-    return (
-        <>
-            <Navbar />
-            <Hero /> 
-            <Highlights />
-            <Products />
-            <Testimonial />
-            <Events />
-            <Blogs />
-            <Awards />
-            <Collaborator />
-            <CTA />
-            <Footer /> 
-        </>
-    );
+  return (
+    <div className="w-full overflow-x-hidden">
+      <Navbar />
+      <Hero />
+      <Highlights />
+      <Products />
+      <Testimonial />
+      <Events />
+      <Blogs />
+      <Awards />
+      <Collaborator />
+      <CTA />
+      <Footer />
+    </div>
+  );
 }

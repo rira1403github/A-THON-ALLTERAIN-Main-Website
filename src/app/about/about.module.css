@@ -6,11 +6,12 @@
   margin: auto;
   overflow-x: hidden;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 .hero {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .heroImage {
@@ -31,7 +32,7 @@
 
 .subtext {
   color: #999;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .section {
@@ -106,10 +107,10 @@
 }
 
 .teambottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card h4 {
@@ -160,7 +161,7 @@
 
 .subscribecontainer {
   max-width: 1280px;
-  height: 400px;
+  height: 300px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -175,9 +176,9 @@
 }
 
 .subscribetitle {
-    position: relative;
-    top: 0;
-  font-size: 3.5rem;
+  position: relative;
+  top: 0;
+  font-size: 3rem;
   color: #fff;
   font-weight: 600;
   line-height: 1.2;
@@ -187,8 +188,6 @@
 .star {
   color: #fff;
 }
-
-
 
 .form {
   flex: 1;
@@ -278,11 +277,203 @@
   font-size: 1rem;
   color: #bfbfbf;
   max-width: 400px;
-} 
+}
 
+@media (max-width: 900px) {
+  .subscribecontainer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .subscribeform {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .subscribesubtitle {
+    margin: 0 auto 2rem;
+  }
+
+  .subscribetitle {
+    font-size: 2.2rem;
+  }
+
+  .inputWrapper {
+    width: 100%;
+    max-width: 500px;
+  }
+}
 
 @media (max-width: 768px) {
   .section {
     flex-direction: column;
+    gap: 0rem;
+    padding: 0rem;
+    margin: auto;
+  }
+
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    margin: auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .avatar {
+    height: 160px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroImage {
+    height: 120px;
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 26px;
+    margin-top: 0.5rem;
+  }
+
+  .subtext {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .title {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .mission p, .vision p {
+    font-size: 13.95px;
+  }
+
+  .section {
+    padding: 0 0.5rem;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .teamSection {
+    padding: 0rem;
+  }
+
+  .teamGrid {
+    align-items: center;
+    justify-content: center;
+    background: none;
+    margin-top: 0rem;
+    padding: 0rem;
+    gap: 0rem;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(3, minmax(140px, 3fr));
+  }
+
+  .card { 
+    margin: 0.5rem;
+    padding: 0 0 0 0.5rem;
+    height: 200px;
+    width: auto;
+  }
+
+  .avatar {
+    width: 100%;
+    height: 120px;
+  }
+
+  .teambottom {
+    flex-direction: row;
+  }
+
+  .card h4 {
+    margin: 0 0.5rem 0 0;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 0.7rem;
+  }
+
+  .icon {
+    font-size: 1rem;
+    transition: color 0.2s;
+  }
+
+  .facility {
+    text-align: center;
+    align-items: center;
+    padding: 0 2rem 2rem;
+  }
+
+  .imagecontainer {
+    height: 400px;
+    margin: auto;
+    width: 100%
+  }
+
+  .subscribecontainer {
+    flex-direction: column;
+    padding: 0.5rem;
+    height: auto;
+    gap: 0rem;
+  }
+
+  .subscribetitle {
+    font-size: 1.2rem;
+  }
+
+  .subscribesubtitle {
+    font-size: 0.7rem;
+  }
+
+  .form {
+    justify-content: center;
+  }
+
+  .input {
+    font-size: 0.7rem;
+    padding: 0rem;
+  }
+
+  .button {
+    position: relative;
+    bottom: 0rem;   
+    z-index: 1; 
+    width: 50%;
+    padding: 0.3rem 0;
+    font-size: 0.7rem;
+  }
+
+  .button:hover {
+    transform: scale(1.01);
   }
 }

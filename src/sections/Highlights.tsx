@@ -19,27 +19,21 @@ export default function Highlights() {
   const highlights: Highlight[] = [
     {
       id: 1,
-      img: "/assets/landingPage/Test1.webp",
-      title: "India’s First Homegrown ATV",
-      desc: "A-THON made history by unveiling the Ashva 4X4, designed and engineered in India for agriculture, adventure, and extreme off-road use.",
+      img: "/assets/landingPage/High4x4.webp",
+      title: "ASHVA 4X4",
+      desc: "Master India’s toughest terrains with the Ashva 4X4 ATV—powerful, versatile, and perfect for both work and thrilling ATV riding adventures. Ideal for farms, off-road trails, and rugged landscapes.",
     },
     {
       id: 2,
-      img: "/assets/landingPage/Test2.webp",
-      title: "Powerful Engineering",
-      desc: "Equipped with a 976cc V-twin engine, advanced suspension, and 2WD/4WD with locking differentials, ensuring durability, precision, and control across terrains.",
+      img: "/assets/landingPage/High6x6.webp",
+      title: "ASHVA 6X6",
+      desc: "Experience unmatched stability and strength with the Ashva 6X6 ATV. Six wheels deliver superior performance for heavy loads, challenging terrains, and long off-road ATV riding sessions.",
     },
     {
       id: 3,
-      img: "/assets/landingPage/Test3.webp",
-      title: "Multi-Industry Applications",
-      desc: "Built not only for farming but also for defence, robotics, and adventure sports, making it a versatile solution for different industries.",
-    },
-    {
-      id: 4,
-      img: "/assets/landingPage/Test3.webp",
-      title: "Trusted & Recognized",
-      desc: "Endorsed by leaders in AI, defence, and heavy industries, highlighting A-THON’s credibility, innovation, and impact as a true game-changer.",
+      img: "/assets/landingPage/High4S.webp",
+      title: "ASHVA 4S",
+      desc: "Compact yet mighty, the Ashva 4S ATV combines utility and fun. Perfect for daily tasks, weekend ATV rides, and easy handling on urban and rural trails.",
     },
   ];
 
@@ -70,7 +64,7 @@ export default function Highlights() {
             className={styles.card}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.1 }}
           >
             <div className={styles.cardImageWrapper}>
               <Image
@@ -105,7 +99,7 @@ export default function Highlights() {
                 className={styles.card}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.1 }}
               >
                 <div className={styles.cardImageWrapper}>
                   <Image

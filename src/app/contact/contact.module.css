@@ -1,6 +1,7 @@
 .contactPage {
   font-family: 'Arial', sans-serif;
   color: #fff;
+  background-color: #fff;
   max-width: 1440px;
   margin: auto;
   overflow-x: hidden;
@@ -69,7 +70,6 @@
 .card h3 {
   margin: 1rem 0 0.5rem;
   font-size: 18px;
-  text-align: center;
 }
 
 .footprintsSection {
@@ -118,17 +118,6 @@
 .contactForm {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-
-
-.formSection p {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  color: #555;
-}
-
-.contactForm {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -145,6 +134,7 @@
 .contactForm textarea,
 .contactForm select {
   flex: 1;
+  min-width: 250px;
   padding: 0.8rem 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -164,6 +154,7 @@
   display: flex;
   flex: 1;
   gap: 0.5rem;
+  flex-wrap: nowrap;
 }
 
 .phoneInput select {
@@ -195,31 +186,66 @@
     flex-direction: column;
   }
 
-  .footprintsSection {
-    width: auto;
-    margin: auto;
-    background: #fff;
-    color: #000;
-    padding: 1rem;
-    text-align: justify;
+  .phoneInput {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
   }
 
-  .phoneInput select {
+  .phoneInput select,
+  .phoneInput input {
+    width: 100%;
     max-width: 100%;
+  }
+
+  .footprintsSection {
+    width: auto;
+    padding: 1rem;
   }
 
   .footprintsContainer {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-}
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
 }
 
-@media (max-width: 600px) {
-  .inputRow {
+@media (max-width: 480px) {
+
+  .headerSection {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .formSection {
+    padding: 1rem 0.7rem 3rem; 
+  }
+  .formSection h2 {
+    font-size: 2rem;
+  }
+
+  .cardsSection {
+    padding: 1rem 0rem 2rem;
+  }
+
+  .cardsSection h2 {
+    font-size: 2rem;
+  }
+
+  .card {
+  padding: 1rem;
+  width: 250px;
+  height: 200px;
+}
+
+  .headerSection h1 {
+    font-size: 2rem;
+  }
+
+  .phoneInput {
     flex-direction: column;
   }
 
-  .phoneInput select {
-    max-width: 100%;
+  .phoneInput select,
+  .phoneInput input {
+    width: 100%;
   }
 }

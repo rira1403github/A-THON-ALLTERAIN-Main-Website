@@ -3,29 +3,29 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
-    variable: "--font-inter",
-    subsets: ["latin"],
-    display: "swap",
-    axes: ["opsz"],
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+  axes: ["opsz"],
 });
 
 export const metadata: Metadata = {
-    title: "A-THON ALLTERAIN",
-    description: "Created with the help of Frontend Tribe",
+  title: "A-THON ALLTERRAIN",
+  description: "Created with the help of Frontend Tribe",
 };
 
 export default function RootLayout({
-    children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
-    return (
-        <html lang="en">
-            <body
-                className={`${inter.variable} font-sans antialiased bg-neutral-950 text-white`}
-            >
-                {children}
-            </body>
-        </html>
-    );
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className="h-full w-full">
+      <body
+        className={`${inter.variable} font-sans antialiased bg-neutral-950 text-white h-full w-full overflow-x-hidden`}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }
