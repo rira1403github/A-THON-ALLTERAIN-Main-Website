@@ -31,7 +31,7 @@ export default function Highlights() {
     },
     {
       id: 3,
-      img: "/assets/landingPage/High4S.webp",
+      img: "/assets/landingPage/High4s.webp",
       title: "ASHVA 4S",
       desc: "Compact yet mighty, the Ashva 4S ATV combines utility and fun. Perfect for daily tasks, weekend ATV rides, and easy handling on urban and rural trails.",
     },
