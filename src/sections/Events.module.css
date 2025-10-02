@@ -49,7 +49,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  animation: slideUp 1s ease-in-out forwards;
+  /* animation: slideUp 1s ease-in-out forwards; */
 }
 
 .text {
@@ -157,7 +157,7 @@
 
 @media (max-width: 480px) {
   .events {
-    padding: 0rem 0.5rem !important;
+    padding: 0rem 0.8rem !important;
   }
 
   .slide {
@@ -176,8 +176,9 @@
   }
   
   .text {
-    gap: 0rem !important;
-  }
+  display: inline;
+  gap: 0rem;
+}
 
   .title {
     font-size: 1.2rem;
@@ -202,9 +203,5 @@
 
   .paginationWrapper {
     margin-top: 0.75rem;
-  }
-
-  .text {
-    gap: 0rem;
   }
 }

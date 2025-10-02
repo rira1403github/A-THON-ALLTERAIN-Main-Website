@@ -19,8 +19,8 @@ type Slide = {
 
 const slides: Slide[] = [
   { id: 0, label: "ASHVA 6X6", link: "/products/Ashva6x6", img: "/assets/landingPage/hp.webp", alt: "ASHVA6X6" },
-  { id: 1, label: "ASHVA 4X4", link: "/products/Ashva4x4", img: "/assets/landingPage/hp6.webp", alt: "ASHVA4X4" },
-  { id: 2, label: "ASHVA 4S", link: "/products/Ashva4S", img: "/assets/landingPage/hp3.webp", alt: "ASHVA4S" },
+  { id: 1, label: "ASHVA 4X4", link: "/products/Ashva4x4", img: "/assets/landingPage/hp3.webp", alt: "ASHVA4X4" },
+  { id: 2, label: "ASHVA 4S", link: "/products/Ashva4S", img: "/assets/landingPage/hp6.webp", alt: "ASHVA4S" },
 ];
 
 export default function Hero() {

@@ -15,7 +15,7 @@ const products = [
     subtitle: "Unstoppable Capability",
     description:
       "Ashva 4X4 isn’t just an ATV — it’s a force of nature. Born in India and built for the world, it blends raw power with smart engineering to take on fields, forests, and frontiers alike. With rugged strength, adaptive control, and a spirit of adventure, the Ashva 4X4 turns every terrain into its playground.",
-    price: "Rs 89,900 - Rs 1,80,900",
+    price: "Rs 22,09,000 - Rs 31,44,000",
     img: "/assets/landingPage/Ashva4x4.png",
     exploreLink: "/products/Ashva4x4",
     bookLink: "/book",
@@ -28,7 +28,7 @@ const products = [
     subtitle: "Power Meets Style",
     description:
       "Ashva 4S is made for people who want both power and practicality. It’s sleek, easy to handle, and strong, combining tough build quality with everyday use. Whether you’re driving on rough village roads, doing daily work, or going on an adventure, the Ashva 4S shows that a compact machine can still take on big challenges.",
-    price: "Rs 95,000 - Rs 2,00,000",
+    price: "Rs 31,18,000 - Rs 37,73,000",
     img: "/assets/landingPage/Ashva4S.webp",
     exploreLink: "/products/ashva-4s",
     bookLink: "/book",
@@ -46,7 +46,7 @@ const products = [
     exploreLink: "/products/Ashva6x6",
     bookLink: "/book",
   },
-
+  
     {
     id: 4,
     name: "ASHVA BSX",
@@ -54,7 +54,7 @@ const products = [
     subtitle: "Ultimate Off-Road Partner",
     description:
       "Ashva BSX is made for people who want both power and practicality. It’s sleek, easy to handle, and strong, combining tough build quality with everyday use. Whether you’re driving on rough village roads, doing daily work, or going on an adventure, the Ashva BSX shows that a compact machine can still take on big challenges.",
-    price: "Rs 75,000 - Rs 1,50,000",
+    price: "Rs 18,00,000",
     img: "/assets/landingPage/AshvaBSX.webp",
     exploreLink: "/products/AshvaBSX",
     bookLink: "/book",

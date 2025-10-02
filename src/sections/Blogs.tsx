@@ -131,7 +131,7 @@ const BlogSection = () => {
           spaceBetween={20}
           slidesPerView={1}
           autoplay={{ delay: 3000 }}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           loop
           className={styles.blogSwiper}
         >

@@ -1,0 +1,245 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  padding: 0rem 0rem 4rem;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  text-align: center;
+}
+
+.title {
+  height: 80vh;
+  padding-left: 33rem;
+  font-size: 5rem;
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.logo {
+  text-align: left;
+  margin: 1rem 3rem;
+}
+
+.logo img {
+  max-width: 550px;
+  height: 120px;
+  flex: 1;
+}
+
+.closeBtn {
+  position: relative;
+  right: 1rem;
+  top: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.closeBtn:hover {
+  transform: scale(1.1);
+  color: rgb(93, 13, 13);
+}
+
+.tabMenu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: linear-gradient(to right, #000, #444);
+  padding: 0.5rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.tabMenu button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tabMenu button:hover,
+.tabMenu .active {
+  color: #ff3b3b;
+  font-weight: 600;
+}
+
+.models {
+  display: flex;
+  justify-content: right;
+  gap: 6rem;
+  margin: 2rem 7rem !important;
+  flex-wrap: wrap;
+  font-size: 28px;
+}
+
+.models img {
+  width: 330px;
+  transition: transform 0.3s ease;
+}
+
+.models img:hover {
+  transform: scale(1.05);
+}
+
+.dropdown {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 2rem 0;
+  margin: 0 3rem;
+}
+
+.dropdownHeader {
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.dropdownHeader:hover {
+  color: #ff3b3b;
+}
+
+.dropdownContent {
+  font-size: 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.dropdownContent.open {
+  max-height: 600px;
+}
+
+.specTable {
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.specTable tr td:first-child {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.specTable td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  font-family: 400;
+}
+
+.specTable tr:last-child td {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.specTable tr:last-child {
+  border-bottom: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.iconCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  text-align: center;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.iconCard img {
+  width: 300px;
+  max-height: 200px;
+  margin-bottom: 0.5rem;
+}
+
+.iconCard h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.iconCard p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .tabMenu {
+    gap: 1rem;
+  }
+
+  .models img {
+    width: 180px;
+  }
+
+  .iconCard {
+    width: 100px;
+  }
+}
+
+.dropdownHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  background: #f7f7f7;
+  border-radius: 8px;
+  /* margin-bottom: 0.5rem; */
+  transition: background 0.3s ease;
+}
+
+.dropdownHeader:hover {
+  background: #ececec;
+}
+
+.arrowIcon {
+  width: 30px;   
+  height: 15px;
+  transition: transform 0.3s ease;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}

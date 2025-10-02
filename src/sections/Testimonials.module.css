@@ -2,14 +2,14 @@
 
 .testimonials {
   background: #121212;
-  padding: 60px 100px;
+  padding: 40px 100px;
   text-align: center;
   color: #fff;
   max-width: 1440px;
   margin: auto;
   overflow-x: hidden;
   box-sizing: border-box;
-  font-family: 'poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .title {
@@ -33,6 +33,7 @@
 }
 
 .card {
+  position: relative;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
@@ -47,18 +48,107 @@
   display: block;
 }
 
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  opacity: 0;
+  padding: 10px;
+  text-align: left;
+  transition: opacity 0.4s ease;
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.quote {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.readMore {
+  font-size: 14px;
+  font-weight: 500;
+  color: #62b2ff;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+.author {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.role {
+  font-size: 14px;
+  color: #ccc;
+}
+
 .slider {
   display: none;
 }
 
+.mobileCard {
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.mobileContent {
+  padding: 20px;
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .testimonials {
-    padding: 0px 10px 20px;
+    padding: 40px 20px;
   }
   .grid {
     display: none;
   }
+  .testimonialImage {
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+  }
   .slider {
     display: block;
+  }
+  .author {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .role {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 0px 20px 20px;
+  }
+  .mobileContent {
+    padding: 0px 10px;
+  }
+  .author {
+    font-size: 16px;
+  }
+  .role {
+    font-size: 12px;
+  }
+  .readMore {
+    font-size: 12px;
   }
 }

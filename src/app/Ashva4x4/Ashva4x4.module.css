@@ -1,0 +1,1225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.pageWrapper { 
+  width: 100%; 
+  overflow-x: hidden; 
+  font-family: "Poppins", sans-serif; } 
+
+.videoSection { 
+  position: relative; 
+  width: 100%; 
+  height: 80vh; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background: black; 
+}
+
+.video { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  filter: brightness(0.6); 
+} 
+
+.playButton { 
+  position: absolute; 
+  color: white; 
+  font-size: 4rem; 
+  cursor: pointer; 
+  border: 3px solid white; 
+  border-radius: 50%; 
+  width: 80px; 
+  height: 80px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+} 
+
+.productInfo { 
+  text-align: left; 
+  padding: 2rem 3rem; 
+  background: #fff;
+}
+
+.productName { 
+  height: 40px; 
+  width: 350px; 
+} 
+
+.productdescrition {
+  font-size: 18px;
+  margin-top: 0.5rem;
+  color: #000;
+}
+
+.productPrice { 
+  margin-top: 1rem; 
+  font-size: 32px; 
+  color: #000;
+} 
+
+.productPrice span { 
+  font-weight: 600; 
+  color: #000;
+} 
+
+.buttons { 
+  margin-top: 2rem; 
+  display: flex; 
+  justify-content: left; 
+  gap: 1rem; 
+  flex-wrap: wrap; 
+  color: #000;
+} 
+
+.brochureBtn {
+  width: 200px; 
+  height: 50px; 
+  font-size: 14px; 
+  background: transparent; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  border: 2.5px solid black; 
+  font-weight: 500; 
+  transition: all 0.3s ease; 
+}
+
+.testDriveBtn { 
+  width: 190px; 
+  height: 50px; 
+  font-size: 14px; 
+  background: transparent; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  border: 2.5px solid black; 
+  font-weight: 500; 
+  transition: all 0.3s ease; 
+} 
+
+.brochureBtn:hover, 
+.testDriveBtn:hover { 
+  background: black; 
+  color: white; 
+} 
+/* 
+
+.variantsSection { 
+  padding: 4rem 2rem; 
+  background: linear-gradient(180deg, #000000, #141414); 
+  color: white; 
+  text-align: center; 
+} 
+
+.heading { 
+  font-size: 2.5rem; 
+  font-weight: bold; 
+  color: #ffffff;
+} 
+
+.subheading { 
+  font-size: 1rem; 
+  margin-top: 0.5rem; 
+  opacity: 0.8; 
+} 
+
+.content { 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: 3rem; 
+  flex-wrap: wrap; 
+  gap: 2rem; 
+} 
+
+.carImage { 
+  flex: 1; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+} 
+
+.image { 
+  max-width: 450px; 
+  width: 100%; 
+  height: auto; 
+} 
+
+.colorPicker { 
+  display: flex; 
+  gap: 0.6rem;
+  margin-top: 1rem; 
+} 
+
+.colorDot { 
+  width: 25px; 
+  height: 25px; 
+  border-radius: 50%; 
+  cursor: pointer; 
+  border: 1px solid #fff; 
+  transition: 0.3s; 
+} 
+
+.colorDot:hover { 
+  transform: scale(1.1); 
+} 
+
+.active { 
+  border: 2px solid white; 
+} 
+
+.red { 
+  background: red; 
+} 
+
+.yellow { 
+  background: yellow; 
+} 
+
+.green { 
+  background: #556b2f; 
+} 
+
+.grey { 
+  background: grey; 
+} 
+
+.black { 
+  background: black; 
+} 
+
+.white { 
+  background: white; 
+  border: 1px solid #999; 
+} 
+
+.brown { 
+  background: #a0522d;
+} 
+
+.orange { 
+  background: orange; 
+} 
+
+.blue { 
+  background: #1e3a8a; 
+} 
+
+.details { 
+  flex: 1; 
+  text-align: left; 
+} 
+
+.tabs { 
+  display: flex; 
+  gap: 2rem; 
+} 
+
+.tab { 
+  background: none; 
+  border: none; 
+  font-size: 1.2rem; 
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.7; 
+  padding-bottom: 5px; 
+  transition: 0.3s; 
+  border-bottom: 2px solid transparent; 
+} 
+
+.activeTab { 
+  opacity: 1; 
+  font-weight: bold; 
+  border-bottom: 2px solid white; 
+} 
+
+.variantLabel { 
+  margin-top: 0.5rem; 
+  opacity: 0.7; 
+} 
+
+.price { 
+  margin-top: 1.5rem; 
+  font-size: 1.6rem; 
+  font-weight: bold; 
+} 
+
+.specs { 
+  margin-top: 2rem; 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1.2rem 2rem; 
+} 
+
+.specs h4 { 
+  font-size: 1.3rem; 
+  font-weight: bold; 
+} 
+
+.specs p { 
+  opacity: 0.7; 
+  font-size: 0.9rem; 
+} 
+
+.outlineBtn, 
+.fillBtn { 
+  padding: 0.8rem 1.6rem; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  transition: 0.3s; 
+  font-size: 1rem; 
+}
+
+  .outlineBtn { 
+    background: transparent; 
+    color: white; 
+    border: 2px solid white; 
+  }
+
+  .outlineBtn:hover { 
+    background: white; 
+    color: black; 
+  }
+
+  .fillBtn { 
+    background: white; 
+    color: black; 
+    border: 2px solid white; 
+  }
+
+  .fillBtn:hover { 
+    background: black; 
+    color: white; 
+  } 
+   */
+
+@media (max-width: 1024px) { 
+  .content { 
+    flex-direction: 
+    column; text-align: center; } 
+  .details { 
+    text-align: center; 
+  } 
+
+  .tabs { 
+    justify-content: center; 
+  }
+
+  .specs { 
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: center; 
+  }
+}
+
+@media (max-width: 768px) { 
+.details { 
+  text-align: center; 
+} 
+
+.tab { 
+  font-size: 1.2rem; 
+  padding-bottom: 5px;
+} 
+
+.variantLabel { 
+  margin-top: 1rem; 
+} 
+
+.price { 
+  margin-top: 1rem; 
+  font-size: 1.2rem; 
+} 
+
+.specs { 
+  margin-top: 0rem; 
+  gap: 0rem 5rem;
+  justify-content: space-between; 
+} 
+
+.specs h4 { 
+  font-size: 1.2rem; 
+} 
+
+.specs p { 
+  font-size: 0.8rem; 
+} 
+
+.outlineBtn, 
+.fillBtn { 
+  padding: 0.5rem 1rem; 
+  font-size: 0.85rem; 
+}
+
+.videoSection { 
+  height: 40vh;
+}
+
+.productName { 
+  width: 300px;
+  height: 70px; 
+} 
+
+.productInfo { 
+  text-align: center; 
+  padding: 1rem; 
+}
+
+.productPrice { 
+  margin-top: 0.5rem; 
+  font-size: 1.5rem; 
+} 
+
+.buttons { 
+  margin-top: 1rem;
+  justify-content: center; 
+  gap: 1rem; 
+} 
+
+.productPrice { 
+  font-size: 1rem; 
+} 
+
+.playButton { 
+  width: 60px; 
+  height: 60px; 
+  font-size: 2.5rem; 
+} 
+
+.buttons { 
+  justify-content: center; 
+} 
+
+.brochureBtn, .testDriveBtn { 
+  width: 140px; 
+  height: 40px; 
+  font-size: 0.7rem;  
+  } 
+
+  .variantsSection { 
+    padding: 1rem 0.5rem; 
+    margin: auto;
+  } 
+
+  .heading { 
+    font-size: 1.5rem; 
+  } 
+
+  .subheading { 
+    font-size: 0.8rem; 
+  } 
+
+  .content { 
+    margin-top: 0;
+    gap: 1rem; 
+  } 
+
+  .colorPicker { 
+    gap: 0.5rem;
+    margin-top: 1rem; 
+  } 
+} 
+
+.formSection {
+  max-width: 1200px;
+  margin: auto;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* gap: 3rem; */
+  padding: 1rem 2rem 3rem;
+  font-family: "Poppins", sans-serif;
+  /* flex-wrap: wrap; */
+}
+/* 
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+} */
+
+.right {
+  flex: 1;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.8;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.inputField {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  color: #999;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.inputFieldname {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  color: #999;
+  font-size: 1rem;
+  width: 600px;
+  transition: 0.3s;
+}
+
+.inputField:focus,
+.inputFieldname {
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.phoneCode {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f8f8f8;
+  color: #999;
+  font-size: 1rem;
+}
+
+.textarea {
+  padding: 12px;
+  min-height: 120px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+  transition: 0.3s;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.submitBtn {
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: black;
+  color: #000;
+  background: #f8f8f8;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.submitBtn:hover {
+  background: #fff;
+}
+
+.galleryContainer {
+  width: 100%;
+  height: 600px;
+}
+
+.galleryContainer h2 {
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  font-weight: 800;
+}
+.galleryContainer {
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 3px solid white;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .productdescrition {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.6rem;
+  }
+
+  .productName { 
+    height: 30px; 
+    max-width: 400px;
+    width: auto; 
+  } 
+
+  .Galleryheading {
+    color: #fff !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .formSection {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .right {
+    max-width: 100%;
+  }
+
+  .row {
+    justify-content: left;
+  }
+
+  .inputFieldname {
+    font-size: 1rem;
+    width: auto;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .formSection {
+    padding: 1rem 0.7rem 2rem;
+  }
+}
+
+.scrollNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(90deg, #000000, #2b2b2b, #000000);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.scrollBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.scrollBtn:hover {
+  color: #f2f2f2;
+}
+
+.scrollBtn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #f2f2f2;
+  transition: width 0.3s ease;
+}
+
+.scrollBtn:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .scrollNav {
+    gap: 1rem 0.5rem;
+    padding: 1rem 0;
+  }
+  .scrollBtn {
+    font-size: 0.9rem;
+  }
+}
+
+.faqSection {
+  color: #ffffff;
+  background: #101010;
+  padding: 3rem 1rem;
+}
+
+.faqList {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faqItem {
+  background: #1a1a1a;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.question {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.answer {
+  padding: 0 1.25rem 1rem;
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.faqItem.active {
+  background: #222;
+}
+
+@media (max-width: 768px) {
+
+  .financeSection {
+    padding: 0.5rem 1rem 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .videoPlaceholder {
+    height: 30vh;
+  }
+
+  .faqSection {
+    padding: 1rem 0.5rem 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .faqItem {
+    font-size: 0.95rem;
+  }
+}
+
+.galleryWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.Galleryheading {
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.mainImage {
+  max-height: 500px;
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.mainImage img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.thumbnailRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.thumbnail {
+  width: 120px;
+  height: 80px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail:hover {
+  border-color: #000;
+}
+
+.active {
+  border-color: #000;
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .thumbnail {
+    width: 80px;
+    height: 60px;
+  }
+  .caption {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; 
+  }
+
+  .galleryWrapper {
+    padding: 0rem 0.5rem 1rem;
+  }
+
+  .thumbnailRow {
+    gap: 0.5rem;
+  }
+  
+  .Galleryheading {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.financeSection {
+  position: relative;
+  background-color: #054aa4;
+  color: #ffffff;
+  padding: 2rem 0rem 3rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.rupeeBg {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  margin: auto;
+  height: auto;
+  width: auto;
+  color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-50%);
+  z-index: 0;
+  opacity: 1;
+}
+
+.rupeeBgImage {
+  position: relative;
+  margin: auto;
+  width: 240px;
+  height: 450px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  font-size: 20px;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.banks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 3rem 0 5rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.bankCard {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.bankCard:hover {
+  transform: translateY(-8px) scale(1.01);
+}
+
+.callBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  color: #054aa4;
+  font-weight: 500;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.callBtn:hover {
+  background: #f1f1f1;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    padding: 0 1rem;
+  }
+
+  .banks {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+
+  .rupeeBg {
+    font-size: 10rem;
+    left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .financeSection {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .callBtn {
+    width: 80%;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .rupeeBg {
+    display: none;
+  }
+}
+ 
+.variantsSection {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 3rem; 
+  width: 100%;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.subheading {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+
+.content {
+  margin-top: 3rem;
+  margin-right: 7rem;
+  display: flex;
+  justify-content:right;
+
+  align-items: center;
+}
+
+.details {
+  max-width: 450px;
+  text-align: left;
+}
+
+.tabs {
+  display: flex;
+  gap: 2rem;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.7;
+  padding-bottom: 5px;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.activeTab {
+  opacity: 1;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.variantLabel {
+  margin-top: 0.5rem;
+  opacity: 0.7;
+}
+
+.price {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.specs {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem 2rem;
+}
+
+.specs h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.specs p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.outlineBtn,
+.fillBtn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.outlineBtn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.outlineBtn:hover {
+  background: white;
+  color: black;
+}
+
+.fillBtn {
+  background: white;
+  color: black;
+  border: 2px solid white;
+}
+
+.fillBtn:hover {
+  background: black;
+  color: white;
+}
+
+.colorPicker {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.colorDot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+
+.colorDot:hover {
+  transform: scale(1.1);
+}
+
+.active {
+  border: 2px solid white;
+}
+
+.red {
+  background: red;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: #556b2f;
+}
+
+.grey {
+  background: grey;
+}
+
+.black {
+  background: black;
+}
+
+.white {
+  background: white;
+  border: 1px solid #999;
+}
+
+.brown {
+  background: #a0522d;
+}
+
+.orange {
+  background: orange;
+}
+
+.blue {
+  background: #1e3a8a;
+}
+
+.rainbow {
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+} 
