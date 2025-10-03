@@ -423,13 +423,8 @@
   border-radius: 8px;
 }
 
-.thumbnail:hover {
-  border-color: #ff6600;
-}
-
-.active {
-  border-color: #ff6600;
-  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.4);
+.thumbnail:active {
+  transform: scaleX(1.05);
 }
 
 @media (max-width: 768px) {
@@ -437,6 +432,7 @@
     width: 80px;
     height: 60px;
   }
+  
   .caption {
     font-size: 0.9rem;
   }
@@ -485,6 +481,7 @@
   .timeline {
     height: 100px;
     width: auto;
+    margin: 0 0.7rem;
   }
   
   .timelineRow {
@@ -505,5 +502,20 @@
   .galleryWrap {
     margin: 0px auto 0px;
     padding: 10px;
+  }
+
+  .thumbnailRow {
+    gap: 0.5rem;
+  }
+
+  .thumbnail {
+    width: auto;
+    height: auto;    
+  }
+
+  .thumbnail img {
+    width: 50px;
+    height: 100%;
+    object-fit: contain;
   }
 }

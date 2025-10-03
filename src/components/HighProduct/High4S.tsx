@@ -19,19 +19,19 @@ export default function Highlights() {
   const highlights: Highlight[] = [
     {
       id: 1,
-      img: "/assets/landingPage/High4x4.webp",
+      img: "/assets/Highlights/4SH1.webp",
       title: "COMPACT. LIGHT & UNSTOPPABLE",
       desc: "Compact and lightweight ATV built for easy maneuvering on farms, estates, and ATV trails.",
     },
     {
       id: 2,
-      img: "/assets/landingPage/High6x6.webp",
+      img: "/assets/Highlights/4SH2.webp",
       title: "UTILITY MEETS ADVENTURE",
       desc: "Perfect balance of work utility and recreational ATV riding fun.",
     },
     {
       id: 3,
-      img: "/assets/landingPage/High4s.webp",
+      img: "/assets/Highlights/4SH3.webp",
       title: "GO FURTHER, SPEND LESS",
       desc: "Fuel-efficient design for cost-effective daily use and ATV touring experiences.",
     }

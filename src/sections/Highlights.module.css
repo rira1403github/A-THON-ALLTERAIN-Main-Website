@@ -55,7 +55,7 @@
 }
 
 .card img:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: transform 0.3s ease;
 }
 
@@ -70,7 +70,7 @@
 .card p {
     margin: 1rem;
     text-align: justify;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     color: #fff;
 }

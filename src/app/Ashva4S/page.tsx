@@ -87,11 +87,11 @@ const ProductPage = () => {
   };
 
   const images: GalleryImage[] = [
-    { src: "/assets/productpage/blogs4x41.webp", alt: "Ashva 4x4 pict 1" },
-    { src: "/assets/productpage/blogs4x42.webp", alt: "Ashva 4x4 pict 2" },
-    { src: "/assets/productpage/blogs4x43.webp", alt: "Ashva 4x4 pict 3" },
-    { src: "/assets/productpage/blogs4x44.webp", alt: "Ashva 4x4 pict 4" },
-    { src: "/assets/productpage/blogs4x41.webp", alt: "Ashva 4x4 pict 1" },
+    { src: "/assets/productpage/gallery/G4s-1.webp", alt: "Ashva 4s pict 1" },
+    { src: "/assets/productpage/gallery/G4s-2.webp", alt: "Ashva 4s pict 2" },
+    { src: "/assets/productpage/gallery/G4s-3.webp", alt: "Ashva 4s pict 3" },
+    { src: "/assets/productpage/gallery/G4s-4.webp", alt: "Ashva 4s pict 4" },
+    { src: "/assets/productpage/gallery/G4s-5.webp", alt: "Ashva 4s pict 1" },
   ];
   
 const [selected, setSelected] = useState<GalleryImage>(images[0]);

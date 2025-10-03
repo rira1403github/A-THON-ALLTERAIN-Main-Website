@@ -19,21 +19,21 @@ export default function Highlights() {
   const highlights: Highlight[] = [
     {
       id: 1,
-      img: "/assets/landingPage/High4x4.webp",
-      title: "ASHVA 4X4",
-      desc: "Master India’s toughest terrains with the Ashva 4X4 ATV—powerful, versatile, and perfect for both work and thrilling ATV riding adventures. Ideal for farms, off-road trails, and rugged landscapes.",
+      img: "/assets/landingPage/high-main-1.webp",
+      title: "India’s First Homegrown ATV",
+      desc: "A-THON made history by unveiling the Ashva 4X4, designed and engineered in India for agriculture, adventure, and extreme off-road use.",
     },
     {
       id: 2,
-      img: "/assets/landingPage/High6x6.webp",
-      title: "ASHVA 6X6",
-      desc: "Experience unmatched stability and strength with the Ashva 6X6 ATV. Six wheels deliver superior performance for heavy loads, challenging terrains, and long off-road ATV riding sessions.",
+      img: "/assets/landingPage/high-main-2.webp",
+      title: "Powerful Engineering",
+      desc: "Powered by a 976cc V-twin engine with advanced suspension and 2WD/4WD locking differentials for durability and control on any terrain.",
     },
     {
       id: 3,
-      img: "/assets/landingPage/High4s.webp",
-      title: "ASHVA 4S",
-      desc: "Compact yet mighty, the Ashva 4S ATV combines utility and fun. Perfect for daily tasks, weekend ATV rides, and easy handling on urban and rural trails.",
+      img: "/assets/landingPage/high-main-3.webp",
+      title: "Multi-Industry Applications",
+      desc: "Built not only for farming but also for defence, robotics, and adventure sports, making it a versatile solution for different industries.",
     },
   ];
 

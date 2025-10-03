@@ -19,19 +19,19 @@ export default function Highlights() {
   const highlights: Highlight[] = [
     {
       id: 1,
-      img: "/assets/landingPage/High4x4.webp",
+      img: "/assets/Highlights/4x4H1.webp",
       title: "UNSTOPPABLE ON ANY GROUND",
       desc: "Conquer Indian terrains with ease – the Ashva 4X4 ATV handles mud, rocky trails, hilly slopes, and rugged landscapes effortlessly.",
     },
     {
       id: 2,
-      img: "/assets/landingPage/High6x6.webp",
+      img: "/assets/Highlights/4x4H2.webp",
       title: "VERSATILITY THAT WORKS ANYWHERE",
       desc: "Perfect for both work and off-road adventure, serving farmers, forestry departments, rescue teams, and adventure riders.",
     },
     {
       id: 3,
-      img: "/assets/landingPage/High4s.webp",
+      img: "/assets/Highlights/4x4H3.webp",
       title: "BUILT FOR POWER",
       desc: "Powerful and multi-purpose – high load-carrying and towing capacity make it a true all-terrain utility vehicle.",
     },

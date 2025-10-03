@@ -19,19 +19,19 @@ export default function Highlights() {
   const highlights: Highlight[] = [
     {
       id: 1,
-      img: "/assets/landingPage/High4x4.webp",
+      img: "/assets/Highlights/6x6H1.webp",
       title: "RIDE BEYOND LIMITS",
       desc: "Six-wheel power and stability – the Ashva 6X6 ATV ensures superior traction and balance for safe and thrilling ATV riding adventures.",
     },
     {
       id: 2,
-      img: "/assets/landingPage/High6x6.webp",
+      img: "/assets/Highlights/6x6H2.webp",
       title: "LOAD, TOW & DOMINATE",
       desc: "Heavy-duty off-road performance – perfect for carrying heavy loads, towing equipment, and tackling tough trails during off-road ATV rides.",
     },
     {
       id: 3,
-      img: "/assets/landingPage/High4s.webp",
+      img: "/assets/Highlights/6x6H3.webp",
       title: "CONQUER MUD, ROCKS & SAND",
       desc: "Versatile all-terrain vehicle – ideal for ATV tourism, farming, rescue operations, and extreme adventure riding across mud, rocks, and sand.",
     },
