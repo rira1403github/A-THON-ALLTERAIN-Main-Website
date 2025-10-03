@@ -112,7 +112,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.imageWrapper}>
         <Image
-          src="/assets/landingPage/hp.webp" 
+          src="/assets/landingPage/hp.webp"
           alt="ATVs Lineup"
           fill
           priority
@@ -123,11 +123,12 @@ export default function Hero() {
 
         <div className={styles.textContainer}>
           <h2 className={styles.subheading}>
-            For The World : India's First Home Grown Tech.<br />
-            Trailblazing All Terrain Farm RoV'Rs.
+            For The World : India&apos;s First Home Grown Tech.<br />
+            Trailblazing All Terrain Farm RoV&apos;Rs.
           </h2>
+
           <h1 className={styles.heading}>
-            All-Terrain Ag & Farm Dynamics
+            All-Terrain Ag &amp; Farm Dynamics
           </h1>
         </div>
       </div>
