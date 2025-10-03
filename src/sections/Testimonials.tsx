@@ -181,7 +181,7 @@ export default function Testimonials() {
         "Great Initiative! INTELLIGENCE REVOLUTION, The Key For Sustainable Growth.",
       author: "Umakant Soni",
       role: "Chaiman AI Foundry | Co-Founder ARTPARK",
-      link: "#",
+      link: "https://www.linkedin.com/posts/soniumakant_agribot-aiforall-agriculture-activity-7193495684816228353-fQnz/?utm_source=share&utm_medium=member_desktop",
     },
     {
       id: 2,
@@ -191,7 +191,7 @@ export default function Testimonials() {
         "This Product, A Game Changer For Farming, Is Also A Game Changer For Defense.",
       author: "Virbhadra Singh Rawat",
       role: "Senior Advisor Aerospace, Defence, Startups",
-      link: "#",
+      link: "https://www.linkedin.com/posts/virbhadra-singh-rawat-018359168_makeinindia-farmers-innovators-activity-7173872843997241345-GrSH/?utm_source=share&utm_medium=member_desktop",
     },
     {
       id: 3,
@@ -201,7 +201,7 @@ export default function Testimonials() {
         "Quite pleases after seeing All of your Accomplishments in this Robotic World & Artificial Intelligence.",
       author: "Sri HD Kumaraswany",
       role: "Honorable Minister of Heavy Industries & Steel",
-      link: "#",
+      link: "https://www.linkedin.com/posts/a-thon-allterrain-pvt-ltd_innovationinindia-makeinindia-allterraintech-activity-7252329314845630464-1-vn/?utm_source=share&utm_medium=member_android",
     },
   ];
 
@@ -225,7 +225,6 @@ export default function Testimonials() {
         Hear from adventurers, professionals, and enthusiasts who have pushed our vehicles to their limits.
       </motion.p>
 
-      {/* Desktop grid */}
       <div className={styles.grid}>
         {testimonials.map((t) => (
           <motion.div
@@ -261,7 +260,6 @@ export default function Testimonials() {
         ))}
       </div>
 
-      {/* Mobile slider */}
       <div className={styles.slider}>
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -269,7 +267,7 @@ export default function Testimonials() {
           slidesPerView={1}
           loop
           autoplay={{ delay: 3000 }}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
         >
           {testimonials.map((t) => (
             <SwiperSlide key={t.id}>
