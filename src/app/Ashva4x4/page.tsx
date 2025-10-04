@@ -114,11 +114,11 @@ const ProductPage: React.FC = () => {
   };
 
   const images: GalleryImage[] = [
-    { src: "/assets/productpage/blogs4x41.webp", alt: "Ashva 4x4 pict 1" },
-    { src: "/assets/productpage/blogs4x42.webp", alt: "Ashva 4x4 pict 2" },
-    { src: "/assets/productpage/blogs4x43.webp", alt: "Ashva 4x4 pict 3" },
-    { src: "/assets/productpage/blogs4x44.webp", alt: "Ashva 4x4 pict 4" },
-    { src: "/assets/productpage/blogs4x41.webp", alt: "Ashva 4x4 pict 1 duplicate" },
+    { src: "/assets/productpage/G4x4-1.webp", alt: "Ashva 4x4 pict 1" },
+    { src: "/assets/productpage/G4x4-2.webp", alt: "Ashva 4x4 pict 2" },
+    { src: "/assets/productpage/G4x4-3.webp", alt: "Ashva 4x4 pict 3" },
+    { src: "/assets/productpage/G4x4-4.webp", alt: "Ashva 4x4 pict 4" },
+    { src: "/assets/productpage/G4x4-5.webp", alt: "Ashva 4x4 pict 5" },
   ];
 
   const [selected, setSelected] = useState<GalleryImage>(images[0]);
