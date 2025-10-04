@@ -28,7 +28,7 @@ const BlogSection = () => {
 
   const blogs: Blog[] = [
     {
-      id: 1,
+      id: 1, 
       title: "ASHVA 4X4 – Redefining Off-Road Adventures",
       description:
         "The ASHVA 4X4 is a powerful ATV built for tough terrains, offering strong performance, reliable safety, and a rugged design that combines comfort, style, and durability...",
@@ -42,7 +42,7 @@ const BlogSection = () => {
       title: "Experience Rugged Strength & Adventure with ASHVA 6X6",
       description:
         "The ASHVA 6X6 is a powerful all-terrain vehicle built for extreme conditions, offering superior traction, durability, and comfort for both adventure and heavy-duty tasks...",
-      cover: "/assets/blogs/blogs6x61.webp",
+      cover: "/assets/blogs/blogs6x61.webp", 
       author: "Sarah Lee",
       publishedAt: "2024-09-05",
       slug: "electric-atvs",
@@ -52,7 +52,7 @@ const BlogSection = () => {
       title: "ASHVA 4S – Experience the Thrill of Off-Road Adventures",
       description:
         "The ASHVA 4S is a compact, powerful ATV offering superior traction, agility, and comfort—perfect for off-road adventures and light utility tasks...",
-      cover: "/assets/blogs/blogs4S1.webp",
+      cover: "/assets/blogs/blogs4S1.webp", 
       author: "Mike Ross",
       publishedAt: "2024-10-21",
       slug: "extreme-terrain-design",
