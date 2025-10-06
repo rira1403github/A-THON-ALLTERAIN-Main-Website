@@ -17,7 +17,7 @@ const products = [
       "Ashva 4X4 isn’t just an ATV — it’s a force of nature. Born in India and built for the world, it blends raw power with smart engineering to take on fields, forests, and frontiers alike. With rugged strength, adaptive control, and a spirit of adventure, the Ashva 4X4 turns every terrain into its playground.",
     price: "Rs 22,09,000 - Rs 31,44,000",
     img: "/assets/landingPage/Ashva4x4.png",
-    exploreLink: "/products/Ashva4x4",
+    exploreLink: "/Ashva4x4",
     bookLink: "/book",
   },
 
@@ -30,7 +30,7 @@ const products = [
       "Ashva 4S is made for people who want both power and practicality. It’s sleek, easy to handle, and strong, combining tough build quality with everyday use. Whether you’re driving on rough village roads, doing daily work, or going on an adventure, the Ashva 4S shows that a compact machine can still take on big challenges.",
     price: "Rs 31,18,000 - Rs 37,73,000",
     img: "/assets/landingPage/Ashva4S.webp",
-    exploreLink: "/products/ashva-4s",
+    exploreLink: "/Ashva4S",
     bookLink: "/book",
   },
 
@@ -43,7 +43,7 @@ const products = [
       "Ashva 6X6 is the true powerhouse of the Ashva series, built to dominate the toughest terrains with unmatched stability and strength. With six-wheel drive, rugged engineering, and massive load capacity, it’s perfect for defence, farming, and extreme adventure. No path is too rough, no challenge too big — the Ashva 6X6 is designed to go beyond limits.",
     price: "Rs 1,20,000 - Rs 2,50,000",
     img: "/assets/landingPage/Ashva6x6.webp",
-    exploreLink: "/products/Ashva6x6",
+    exploreLink: "/Ashva6x6",
     bookLink: "/book",
   },
   
@@ -56,7 +56,7 @@ const products = [
       "Ashva BSX is made for people who want both power and practicality. It’s sleek, easy to handle, and strong, combining tough build quality with everyday use. Whether you’re driving on rough village roads, doing daily work, or going on an adventure, the Ashva BSX shows that a compact machine can still take on big challenges.",
     price: "Rs 18,00,000",
     img: "/assets/landingPage/AshvaBSX.webp",
-    exploreLink: "/products/AshvaBSX",
+    exploreLink: "#",
     bookLink: "/book",
   },
 ];
