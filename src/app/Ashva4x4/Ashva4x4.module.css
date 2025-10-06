@@ -862,6 +862,7 @@
 
 .imageWrapper {
   flex: 1;
+  height: auto;
   min-width: 320px;
   max-width: 600px;
 }
@@ -918,6 +919,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.8rem;
+  color: #000;
 }
 
 .specs {
@@ -1064,13 +1066,15 @@
 
 .imageWrapper {
   flex: 1;
-  max-width: 300px;
+  max-width: 380px;
   width: auto;
-  height: 300px;
+  height: auto;
 }
 
 .vehicleImage {
   border-radius: 0rem;
+  height: 100%;
+  width: 100%;
 }
 
 .price {
@@ -1099,5 +1103,9 @@
 .colorDot {
   width: 28px;
   height: 28px;
+}
+
+.variantLabel {
+  margin-bottom: 0rem;
 }
 }
